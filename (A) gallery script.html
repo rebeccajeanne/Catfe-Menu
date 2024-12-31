@@ -1,0 +1,133 @@
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  height: 320px;
+  width: 250px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.photoSlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a white background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+</style>
+<body>
+
+<div class="container" id="GalleryA">
+  <div class="photoSlides">
+    <div class="numbertext">1 / n</div>
+    <img src="/gallery photos/Calypso/Calypso_1.jpg" alt="Calypso in a box." name="Calypso_1" style="width:100%">
+  </div>
+
+  <div class="photoSlides">
+    <div class="numbertext">2 / n</div>
+    <img src="/gallery photos/Calypso/Calypso_2.jpg" alt="Calypso on a book." name="Calypso_2" style="width:100%">
+  </div>
+
+  <div class="photoSlides">
+    <div class="numbertext">3 / n</div>
+    <img src="/gallery photos/Calypso/Calypso_3.jpg" alt="Calypso sleeping on a computer." name="Calypso_3" style="width:100%">
+  </div>
+    
+  <div class="photoSlides">
+    <div class="numbertext">4 / n</div>
+    <img src="/gallery photos/Calypso/Calypso_4.jpg" alt="Calypso snuggled up." name="Calypso_4" style="width:100%">
+  </div>
+
+  <div class="photoSlides">
+    <div class="numbertext">5 / n</div>
+    <img src="/gallery photos/Calypso/Calypso_5.jpg" alt="Calypso being held like a baby." name="Calypso_5" style="width:100%">
+  </div>
+    
+  <div class="photoSlides">
+    <div class="numbertext">6 / n</div>
+    <img src="/gallery photos/Calypso/Calypso_6.jpg" alt="Calypso when she first arrived, still growing back her fur." name="Calypso_6" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("photoSlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>

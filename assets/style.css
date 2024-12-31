@@ -1,0 +1,9 @@
+.gal-photo {
+    height: 300px;
+    width: 300px;
+}
+
+h1, h2, p {
+    font-family: Arial;
+    margin: 0;
+}
