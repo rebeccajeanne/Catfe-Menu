@@ -53,6 +53,7 @@ p {
 }
 
 .gal-photo {
+    display: inline-block;
     height: 320px;
     width: 250px;
     background: white;
