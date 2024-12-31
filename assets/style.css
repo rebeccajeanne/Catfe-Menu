@@ -1,9 +1,14 @@
-.gal-photo {
-    height: 300px;
-    width: 300px;
+body {
+    background-color:blanchedalmond;
 }
 
-h1, h2, p {
+h1, h2 {
+    font-family: Arial;
+    margin: 0;
+    text-align: center;
+}
+
+p {
     font-family: Arial;
     margin: 0;
 }
