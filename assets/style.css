@@ -7,7 +7,7 @@ body {
     padding-right:auto;
     height:400px;
     width: 800px;
-    border-radius: 600px 600px 0 0;
+    border-radius: 50% 50% 0 0;
     background-color: blanchedalmond;
     border: 50px;
     border-color: #271300;
@@ -43,4 +43,10 @@ p {
 #logo {
     padding-left: auto;
     padding-right: auto;
+}
+
+.gal-photo {
+    height: 320px;
+    width: 250px;
+    background: white;
 }
