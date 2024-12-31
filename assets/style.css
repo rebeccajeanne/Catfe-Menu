@@ -1,5 +1,16 @@
 body {
-    background-color:blanchedalmond;
+    background-color: #724e2c;
+}
+
+#header-arch {
+    padding-left:auto;
+    padding-right:auto;
+    height:400px;
+    width: 800px;
+    border-radius: 600px 600px 0 0;
+    background-color: blanchedalmond;
+    border: 50px;
+    border-color: #271300;
 }
 
 h1, h2 {
