@@ -52,9 +52,7 @@ p {
     padding-right: auto;
 }
 
-.gal-photo {
-    display: inline-block;
-    height: 320px;
-    width: 250px;
-    background: white;
+.gal-logo_slide img{
+    width: 100%;
+    height: auto;
 }
