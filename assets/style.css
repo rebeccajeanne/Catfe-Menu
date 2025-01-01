@@ -31,10 +31,9 @@ p {
     margin: 0;
 }
 
-.gal-logo-container {
-    display: inline-block;
-    padding-left: auto;
-    padding-right: auto;
+.gal-photo_container{
+    display:inline-block;
+    width:100%;
 }
 
 #circle {
