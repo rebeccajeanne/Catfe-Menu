@@ -37,6 +37,7 @@ p {
 }
 
 #circle {
+    display: inline-block;
     height: 200px;
     width: 200px;
     -webkit-border-radius: 100%;
@@ -48,6 +49,7 @@ p {
 }
 
 #logo {
+    display: inline-block;
     padding-left: auto;
     padding-right: auto;
 }
