@@ -32,6 +32,7 @@ p {
 }
 
 .gal-logo-container {
+    display: inline-block;
     padding-left: auto;
     padding-right: auto;
 }
