@@ -32,20 +32,17 @@ p {
 }
 
 .gal-logo-container {
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 #circle {
-    display: inline-block;
     height: 200px;
     width: 200px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
     background: white;
-    padding-left:auto;
-    padding-right:auto;
 }
 
 #logo {
