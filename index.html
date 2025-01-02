@@ -1,13 +1,6 @@
  <!DOCTYPE html>
 <html lang="en">
     <head>
-         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-        <!-- End Google Tag Manager -->
         <link rel="tab-icon" type="image/jpg" href="assets/catfe logo.jpg"/>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,26 +8,30 @@
         <!-- make stylesheet -->
         <link href="assets/style.css" rel="stylesheet"/>
         <!-- add js for carousels -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     
     </body>
       <!--default to gallery view-->
-      <div id="header-arch"></div>
-      <div class="logo-name">
-        <div class="gal-logo-container">
-            <!--drawing a circle behind logo-->
-            <div id="circle"></div>
-            <img src="assets/catfe_logo-removebg.png" alt="catfe logo" name="catfe_logo" id="logo" style="position:absolute; top:0px; left:auto; right:auto; z-index:1;">
-            <h1>Catf&eacute; Montclair</h1>
-            <h2>Current Purristas</h2>
+      <div id="header-arch-container">
+        <div id="header-arch">
+          <div id="logo-name" style="display:flex; justify-content: center;">
+            <div class="logo-container">
+              <!--drawing a circle behind logo-->
+              <div id="circle">
+                <img src="assets/catfe_logo-removebg.png" alt="catfe logo" name="catfe_logo" id="logo" style="position:inherit; top:8px; left: 6px;; z-index:2;">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <h1>Catf&eacute; Montclair</h1>
+      <h2>Current Purristas</h2>
     
       <!-- photos -->
-       <object data="gallery photos/Carousel Test.html"></object>
+       <object data="gallery photos/Carousel Test.html" style="padding: 0; margin: 0; width:100px; height:109px;"></object>
       <!--end of photos-->
     </body>
 </html>
