@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="tab-icon" type="image/jpg" href="assets/catfe logo.jpg"/>
@@ -15,23 +15,40 @@
     
     </body>
       <!--default to gallery view-->
-      <div id="header-arch-container">
-        <div id="header-arch">
-          <div id="logo-name" style="display:flex; justify-content: center;">
-            <div class="logo-container">
-              <!--drawing a circle behind logo-->
-              <div id="circle">
-                <img src="assets/catfe_logo-removebg.png" alt="catfe logo" name="catfe_logo" id="logo" style="position:inherit; top:8px; left: 6px;; z-index:2;">
+      <div id="header-container">
+        <!--arch and logo-->
+
+          <!--left dynamic box-->
+          <div class="header-container">
+            <div class="header-box"></div>
+          </div>
+          <!--arch w logo-->
+          <div id="arch-container">
+            <div id="header-arch">
+              <div class="logo-container">
+                <!--drawing a circle behind logo-->
+                <div id="circle">
+                  <img src="assets/catfe_logo-removebg.png" alt="catfe logo" name="catfe_logo" id="logo" style="position:inherit; top:8px; left: 6px; z-index:2;">
+                </div>
               </div>
             </div>
           </div>
+          <div class="header-container">
+            <div class="header-box"></div>
+          </div>
         </div>
-      </div>
-      <h1>Catf&eacute; Montclair</h1>
-      <h2>Current Purristas</h2>
+      <h1 style="width:100%; background-color: blanchedalmond; text-align: center;">Catf&eacute; Montclair</h1>
+      <h2 style="width:100%; background-color: blanchedalmond; text-align: center;">Current Purristas</h2>
     
       <!-- photos -->
-       <object data="gallery photos/Carousel A.html" style="padding: 0; margin: 0; width:100px; height:109px;"></object>
+       <div id="gallery-container">
+
+          <object data="gallery photos/Carousel_A.html" style="margin: 50px; width:100px; height:109px; position: relative; left: 15%;"></object>
+          <object data="gallery photos/Carousel_B.html" style="margin: 50px; width:100px; height:109px; position: relative; left: 15%;"></object>
+          <object data="gallery photos/Carousel_C.html" style="margin: 50px; width:100px; height:109px; position: relative; left: 15%;"></object>
+          <object data="gallery photos/Carousel_D.html" style="margin: 50px; width:100px; height:109px; position: relative; left: 15%;"></object>
+       </div>
+       
       <!--end of photos-->
     </body>
 </html>
