@@ -52,6 +52,8 @@ h2 {
     margin: 0;
     text-decoration: underline;
     padding: 8px;
+    padding-top:30px;
+    padding-bottom:0;
     width: auto; 
     background-color: blanchedalmond; 
     text-align: center;
@@ -90,7 +92,7 @@ p {
     background-color: blanchedalmond;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding-top:0;
 }
 
 .row {
@@ -154,9 +156,14 @@ p {
     height: 0;
   }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1250px) {
     .row {   
       flex-direction: column;
+    }
+    body, #gallery-container {
+        width:100%;
+        margin-left:0;
+        margin-right:0;
     }
 }
 
