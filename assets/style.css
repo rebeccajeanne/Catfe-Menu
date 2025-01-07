@@ -1,5 +1,6 @@
 body {
     background-color: #724e2c;
+    position: absolute;
 }
 
 .header-container {
@@ -54,6 +55,7 @@ h2 {
     width: auto; 
     background-color: blanchedalmond; 
     text-align: center;
+    bottom: 10px;
 }
 
 p {
@@ -64,6 +66,7 @@ p {
     background-color: blanchedalmond; 
     text-align: center;
     bottom: 5px;
+    flex-wrap: nowrap;
 }
 
 #circle {
@@ -81,12 +84,13 @@ p {
 
 #gallery-container {
     display: inline-flex;
-    justify-content: center;
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100%;
     background-color: blanchedalmond;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .row {
@@ -96,16 +100,16 @@ p {
 }
 
 .carousel {
-    margin: 0px; 
-    padding: 20px;
     width:140px; 
     height:150px;
-    overflow: hidden; 
     position: relative; 
-    left:auto; 
-    right:auto;
     flex-wrap: wrap;
-    
+    padding: 25px;
+}
+
+.carousel-spacing {
+    position: relative;
+    margin: 1.5vw;
 }
 
 .carousel:hover {
@@ -154,4 +158,10 @@ p {
     .row {   
       flex-direction: column;
     }
-  }
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 3.5vw;
+    }
+}
