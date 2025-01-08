@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Story A Container</title>
+    </head>
+    <style>
+        .bio-container {
+            position:absolute;
+            display: inline-flex;
+            overflow: hidden;
+            height:100%;
+            width:100%;
+            background-color: blanchedalmond;
+        }
+        body {
+            background-color: #724e2c;
+            display: flex;
+            position: absolute;
+            width:100%;
+            height:100%;
+            margin:auto;
+        }
+        .left-column {
+            position:relative;
+            display: inline-flex;
+            width:33%;
+            height:auto;
+            background-color: #EF818150;
+        }
+        .right-column {
+            position:relative;
+            display: inline-flex;
+            width:100%;
+            height:auto;
+            background-color: #75C2DA80;
+        }
+
+    </style>
+    <body>
+        <div class="bio-container">
+            <div class="left-column">
+                <div class="carousel-container"></div>
+                <div class="bio-traits"></div>
+            </div>
+        
+            <div class="right-column">
+                <div class="story-container"></div>
+            </div>
+        </div>
+    </body>
+</html>
