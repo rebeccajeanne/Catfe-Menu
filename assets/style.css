@@ -5,7 +5,8 @@ html {
 body {
     background-color: #724e2c;
     position: absolute;
-    margin:2vw;
+    padding:2vw;
+    margin:auto;
 }
 
 .header-container {
@@ -120,7 +121,7 @@ p {
     margin: 1.5vw;
 }
 
-.carousel:hover {
+.carousel-spacing:hover {
     transform: scale(1.5);
 }
 
@@ -195,7 +196,8 @@ p {
     background-color: blanchedalmond;
     width:100%;
     height:100%;
-    padding: 10px; 
+    padding-bottom: 10px;
+    padding-top:12px; 
     text-align: center;
 }
 
