@@ -1,6 +1,8 @@
 body {
     background-color: #724e2c;
     position: absolute;
+    margin: 0;
+    padding:8px;
 }
 
 .header-container {
@@ -22,6 +24,7 @@ body {
     display:flex;
     align-items: flex-end;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 #arch-container {
@@ -171,8 +174,7 @@ p {
     }
     body, #gallery-container {
         width:100%;
-        margin-left:0;
-        margin-right:0;
+        margin: 0px;
     }
 }
 
