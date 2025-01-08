@@ -68,7 +68,6 @@ p {
     background-color: blanchedalmond; 
     text-align: center;
     bottom: 5px;
-    flex-wrap: nowrap;
 }
 
 #circle {
@@ -92,7 +91,7 @@ p {
     background-color: blanchedalmond;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top:0;
+    padding-top: 25px;
 }
 
 .row {
@@ -139,26 +138,35 @@ p {
 }
 
 .names {
+    display: flex;
     font-family: Georgia, serif;
     color:#2D201B;
+    width: 100%;
+    position: inherit;
     font-size: large;
     font-weight: bold;
-    display: flex;
-    position: relative;
     justify-content: center;
     top:-15px;
-    text-transform: capitalize;
     text-decoration: underline 2px;
 }
 
 .break {
     flex-basis: 100%;
     height: 0;
-  }
+}
 
 @media screen and (max-width: 1250px) {
+    .row {
+        flex-wrap: wrap;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .row {   
       flex-direction: column;
+      align-content: center;
+      width:100%;
     }
     body, #gallery-container {
         width:100%;
@@ -170,5 +178,64 @@ p {
 @media screen and (max-width: 500px) {
     p {
         font-size: 3.5vw;
+    }
+}
+
+
+
+.footer {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    background-color: blanchedalmond;
+    width:100%;
+    height:100%;
+    padding: 10px; 
+    text-align: center;
+}
+
+.footer-text {
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    font-family: Georgia, serif;
+    color: #2D201B;
+    font-size: medium;
+    position: relative;
+    top:5px;
+}
+
+#left-container, #right-container {
+    width:50%;
+}
+
+#website, #website:active, #website:visited {
+    color: #2D201B;
+    background-color: transparent;
+    text-decoration: underline 2px;
+}
+
+#website:hover {
+    color: #724E2C;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 730px) {
+    .footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    #left-container, #right-container {
+        width:100%;
+        left: auto;
+        right: auto;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .footer {
+        font-size: 3vw;
     }
 }
