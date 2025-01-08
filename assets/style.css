@@ -1,8 +1,7 @@
 body {
     background-color: #724e2c;
     position: absolute;
-    margin: 0;
-    padding:8px;
+    margin:2vw;
 }
 
 .header-container {
@@ -174,7 +173,7 @@ p {
     }
     body, #gallery-container {
         width:100%;
-        margin: 0px;
+        margin:0;
     }
 }
 
