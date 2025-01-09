@@ -23,30 +23,161 @@
             margin:auto;
         }
         .left-column {
+            font-weight: 600;
             position:relative;
             display: inline-flex;
-            width:33%;
+            justify-content: center;
+            width: 50%;
             height:auto;
-            background-color: #EF818150;
+            /*background-color: #EF818150;*/
+            background-color: blanchedalmond;
+            flex-direction: column;
+            align-items: center;
         }
         .right-column {
             position:relative;
             display: inline-flex;
+            justify-content: center;
             width:100%;
             height:auto;
-            background-color: #75C2DA80;
+            /*background-color: #75C2DA80;*/
+            background-color: blanchedalmond;
+            align-items: center;
+            flex-direction: column;
+        }
+        .carousel-container {
+            position: inherit;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            top:20px;
+            left: -24px;
+        }
+
+        .carousel {
+            width:140px; 
+            height:150px;
+            position: relative; 
+            flex-wrap: wrap;
+            padding: 15px;
+            border: 3px solid #724e2c;
+            padding: 1px;
+            background-color: #8B6850;
+            top: 5px;
+            transform: scale(1.15);
+        }
+
+        .about-me {
+            display: inline-flex;
+            position: relative;
+            width:100%;
+            height:100%;
+            font-family: Georgia, serif;
+            left: 22px;
+        }
+
+        .bio-traits {
+            background-color: transparent;
+            display: inline-flex;
+            position: relative;
+            height:100%;
+            width:100%;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items:flex-end;
+            justify-content: center;
+            padding:3px;
+        }
+
+        .answers {
+            background-color: transparent;
+            display: inline-flex;
+            position:relative;
+            width:100%;
+            height:100%;
+            flex-direction: column;
+            padding-left: 15px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            bottom: -3.5px;
+        }
+
+        .story-container {
+            display: inline-flex;
+            position:relative;
+            width:90%;
+            height:80%;
+            flex-direction: column;
+            top:15px;
+        }
+
+        .break {
+            width: 100%;
+            height: 0;
+        }
+
+        .arrival-date {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            position:relative;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right:10px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .HT-logo {
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+            height: 30%;
+            align-items: center; 
+            position: inherit;
+            justify-content: flex-end;
         }
 
     </style>
     <body>
         <div class="bio-container">
             <div class="left-column">
-                <div class="carousel-container"></div>
-                <div class="bio-traits"></div>
+                <div class="carousel-container">
+                    <object data="../1carousels/Carousel_A.html" class="carousel"></object>
+                </div>
+                
+                <div class="about-me">
+                    <div class="bio-traits">
+                        <p>Name:</p>
+                        <p>M/F:</p>
+                        <p>Age:</p>
+                        <p>Breed:</p>
+                        <div style="position:relative;left:0.7vw;"><p>Adption&nbsp;Status:</p></div>
+                    </div>
+                    <div class="answers">
+                        <p>Benny</p>
+                        <p style="z-index: 5;">male</p>
+                        <p style="z-index: 5;">2 yrs</p>
+                        <p style="z-index: 5;">domestic&nbsp;shorthair&nbsp;(tuxedo)</p>
+                        <p style="font-family: 'Courier New', Courier, monospace;color: #04aa6d;z-index: 5;">Adoptable</p>
+                        <!--<p style="font-family: 'Courier New', Courier, monospace; color: #FE8FAF;">Adopted!</p>-->
+                    </div>
+                </div>
+                
             </div>
-        
+
             <div class="right-column">
-                <div class="story-container"></div>
+                <div class="story-container">
+                    <iframe src="../3stories/Story_A.txt" style="width:115%; height:100%; border-color: #99826c;position: relative;left:-75px;"></iframe>
+                    <div class="break"></div>
+                    <div class="arrival-date">Arrived:&nbsp;<p class="date" style="display:inline-flex; justify-content:flex-end; padding-left:5px;">December 17, 2024</p></div>
+                </div>
+
+                <div class="HT-logo">
+                        <img src="../../assets/homelesstails-transparent.png" style="width:200px;height:100px;" alt="Homeless Tails logo.">
+                    </div>
             </div>
         </div>
     </body>
