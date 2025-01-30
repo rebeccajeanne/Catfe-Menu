@@ -90,6 +90,7 @@ p {
 }
 
 .popup {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +103,10 @@ p {
 }
 
 .bio {
+    position:fixed;
     width:1000px;
     height:450px;
+    margin:auto;
     border:5px solid #724e2c;
     padding:2px;
     background-color:#8B6850;
@@ -176,15 +179,8 @@ p {
     background-color: blanchedalmond;
 }
 
-.bio {
-    display:hidden;
-    position: fixed;
-    width:80%;
-    margin: auto;
-}
-
-.bio:target {
-    display:flex;
+.popup {
+    /*scale*/
 }
 
 .names {
