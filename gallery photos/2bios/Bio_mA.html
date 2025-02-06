@@ -6,6 +6,7 @@
     <title>Story A (Mobile) Container</title>
 </head>
 <style>
+
 .bio-container_m {
     position:absolute;
     display: flex;
@@ -65,7 +66,6 @@ body {
     position: relative;
     justify-content: center;
     width:100%;
-    height:100%;
     font-family: Georgia, serif;
 }
 
@@ -73,14 +73,13 @@ body {
     background-color: transparent;
     display: inline-flex;
     position: relative;
-    height:100%;
+    height:300px;
     width:100%;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items:flex-end;
-    justify-content: flex-end;
     overflow: hidden;
-    padding-top: 4px;
+    padding-top: 7px;
     right:5px;
 }
 
@@ -89,7 +88,7 @@ body {
     display: inline-flex;
     position:relative;
     width:100%;
-    height:100%;
+    height:300px;
     flex-direction: column;
     padding-left: 3px;
     flex-wrap: nowrap;
@@ -104,12 +103,11 @@ body {
     align-items: center;
     position:relative;
     width:100%; 
-    height:100%;
     top:5px;
 }
 
 #story-A_m {
-    border-color: #99826c;
+    border: solid #724e2c;
     position: relative;
     width:85%;
     height: 500px;
@@ -123,14 +121,27 @@ body {
     align-items: center;
 }
 
-.HT-link_m {
+.HT-link_m, .HT-link_m:active, .HT-link_m:visited {
     text-align: center;
+    color: #2D201B;
+    background-color: transparent;
+    text-decoration: underline 2px;
 }
+
+.HT-link_m:hover {
+    text-align: center;
+    color: #724E2C;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
 </style>
 
 
 <body>
     <div class="bio-container_m">
+        <div>
             <div class="carousel-container_m">
                 <object data="../1carousels/Carousel_A.html" class="carousel_m"></object>
             </div>
@@ -166,14 +177,14 @@ body {
         
 
             <div class="HT_m">
-                <div class="HT-logo_m">
+                <div class="HT-logo_m" style="display:flex; align-items: center; justify-content: center;">
                     <img src="../../assets/homelesstails-transparent.png" style="width:200px;height:100px;margin-bottom:10px;" alt="Homeless Tails logo.">
                 </div>
                 <div class="HT-link_m">
                     <a target="_blank" href="https://www.homelesstails.com">Homeless&nbsp;Tails&nbsp;Cat&nbsp;Rescue</a>
                 </div>
             </div>
-
+        </div>
     </div>
 </body>
 </html>

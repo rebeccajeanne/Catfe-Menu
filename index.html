@@ -13,18 +13,22 @@
     </head>
 
     <body>
-      <!--------------------- bios(hidden) ---------------------
-      <div id="bios-container" style="width:100%;height:100%; display:flex; flex-direction: row; position:absolute; right:0px; bottom:0px;">
-        <div class="popup" id="bio-A">
+      <!--------------------- bios(hidden) --------------------->
+      <div class="bios-container" id="bio-A" style="visibility:hidden; width:100%;height:100%; display:flex; flex-direction: row; position:absolute; right:0px; bottom:0px;">
+        <div class="popup">
           <iframe class="bio" src="gallery photos/2bios/Bio_A.html"></iframe>
         </div>
       </div>   
-      -->
+      
+      <!------------------mobile bios(hidden)-------------------->
+      <div class="mBios-container" id="bio-mA" style="visibility:hidden; width:100%;height:100%">
+        <div class="popup">
+          <iframe class="bio_m" src="gallery photos/2bios/Bio_mA.html"></iframe>
+        </div>
+      </div>
 
       <!--default to gallery view-->
       <div id="header-container">
-        <!--arch and logo-->
-
           <!--left dynamic box-->
           <div class="header-container">
             <div class="header-box"></div>
@@ -55,27 +59,27 @@
 
           <div id="carousel-A-container" class="carousel-spacing" >
             <object data="gallery photos/1carousels/Carousel_A.html" class="carousel"></object>
-            <div class="names">Benny (Bonded->) &male;</div>
+            <div class="names" id="nameA">Benny (Bonded->) &male;</div>
           </div>
 
           <div id="carousel-B-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_B.html" class="carousel"></object>
-            <div class="names">Marco (<-Bonded) &male;</div>
+            <div class="names" id="nameB">Marco (<-Bonded) &male;</div>
           </div>
 
           <div id="carousel-C-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_C.html" class="carousel"></object>
-            <div class="names">Calypso &female;</div>
+            <div class="names" id="nameC">Calypso &female;</div>
           </div>
 
           <div id="carousel-D-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_D.html" class="carousel"></object>
-            <div class="names">Cassidy &female;</div>
+            <div class="names" id="nameD">Cassidy &female;</div>
           </div>
 
           <div id="carousel-E-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_E.html" class="carousel"></object>
-            <div class="names">Daisy (Bonded->) &female;</div>
+            <div class="names" id="nameE">Daisy (Bonded->) &female;</div>
           </div>
 
         </div>
@@ -85,27 +89,27 @@
 
           <div id="carousel-F-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_F.html" class="carousel"></object>
-            <div class="names">Duke (<-Bonded) &male;</div>
+            <div class="names" id="nameF">Duke (<-Bonded) &male;</div>
           </div>
 
           <div id="carousel-G-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_G.html" class="carousel"></object>
-            <div class="names">Gabriel &male;</div>
+            <div class="names" id="nameG">Gabriel &male;</div>
           </div>
 
           <div id="carousel-H-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_H.html" class="carousel"></object>
-            <div class="names">Gracie (Bonded->) &female;</div>
+            <div class="names" id="nameH">Gracie (Bonded->) &female;</div>
           </div>
 
           <div id="carousel-I-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_I.html" class="carousel"></object>
-            <div class="names">Zoe (<-Bonded) &female;</div>
+            <div class="names" id="nameI">Zoe (<-Bonded) &female;</div>
           </div>
 
           <div id="carousel-J-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_J.html" class="carousel"></object>
-            <div class="names">Kiwi &female;</div>
+            <div class="names" id="nameJ">Kiwi &female;</div>
           </div>
 
         </div>
@@ -115,30 +119,30 @@
 
           <div id="carousel-K-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_K.html" class="carousel"></object>
-            <div class="names">Midnight &male;</div>
+            <div class="names" id="nameK">Midnight &male;</div>
           </div>
 
           <div id="carousel-L-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_L.html" class="carousel"></object>
-            <div class="names">Rose &female;</div>
+            <div class="names" id="nameL">Rose &female;</div>
           </div>
 
           <div id="carousel-M-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_M.html" class="carousel"></object>
-            <div class="names">Sabrina &female;</div>
+            <div class="names" id="nameM">Sabrina &female;</div>
           </div>
           
         <!--
           <div id="carousel-N-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_N.html" class="carousel"></object>
-            <div class="names">Name &female; &male;</div>
+            <div class="names" id="nameN">Name &female; &male;</div>
           </div>
         -->
 
           <!--
           <div id="carousel-O-container" class="carousel-spacing">
             <object data="gallery photos/1carousels/Carousel_O.html" class="carousel"></object>
-            <div class="names">Calypso</div>
+            <div class="names" id="nameO">Name &female; &male;</div>
           </div>
           -->
 
@@ -158,5 +162,53 @@
       </div>
       <div style="width:100%; height:20px; background-color: blanchedalmond; margin-bottom: 15px; font-size: 0px;"></div>
      
+      <!--
+      <script>
+        // Get the mobile bio
+        var bioM = document.getElementByID("bio-mA");
+
+	      // Get the regular bio
+        var bio = document.getElementByID("bio-A");
+
+	      // Get the button that opens the bio (EACH PAGE)
+	      var name = document.getElementById("nameA");
+
+	      // Create a MediaQueryList object
+	      var x = window.matchMedia("(max-width: 1200px)")
+
+        // Get the <span> element that closes the modal
+        //var span = document.getElementsByClassName("close")[0];
+	      
+	      // When the user clicks the name, open the bio 
+	      name.onclick = function() {
+	      if (x.matches) {
+		      bioM.style.visibility = "visible";
+			    }
+	      else {
+		      bio.style.visibility = "visible";
+			    }
+	      }
+
+        // When the user clicks on <span> (x), close the modal
+        //span.onclick = function() {
+        //bio.style.visibility = "hidden";
+        //}
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == bioM) {
+            bioM.style.visibility = "hidden";
+        	}
+        }
+
+	      // Call listener function at run time
+	      myFunction(x);
+
+	      // Attach listener function on state changes
+	      x.addEventListener("change", function() {
+  	      myFunction(x);
+	      });
+    </script>
+  -->
     </body>
 </html>
