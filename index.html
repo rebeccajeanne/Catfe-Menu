@@ -59,7 +59,7 @@
 
           <div id="carousel-A-container" class="carousel-spacing" >
             <object data="gallery photos/1carousels/Carousel_A.html" class="carousel"></object>
-            <a class="names" id="nameA" href="/gallery photos/2bios/Bio_mA.html" target="mbio" onclick="bioFunction; AFunction;">Benny (Bonded->) &male;</a>
+            <a class="names" id="nameA" href="#" target="_self" onclick="bioFunction; aFunction;">Benny (Bonded->) &male;</a>
           </div>
 
           <div id="carousel-B-container" class="carousel-spacing">
@@ -178,15 +178,13 @@
           }
         }
         //which name is clicked, open corresponding bio
-        function AFunction() {
-          if (w >= 1200) {
-            nameA.setAttribute("target", "main-bio");
-            nameA.setAttribute("href", "/gallery photos/2bios/Bio_A.html");
-            }
-          else {
-            nameA.setAttribute("target", "mbio");
-            nameA.setAttribute("href", "/gallery photos/2bios/Bio_mA.html");
-            }
+        function aFunction() {
+          let isVisible = bio.checkVisibility();
+          let isVisibleM = mbio.checkVisibility();
+          if (isVisible == true || isVisibleM == true) {
+	          bio.setAttribute("src", "/gallery photos/2bios/Bio_A.html");
+	          mbio.setAttribute("src", "/gallery photos/2bios/Bio_mA.html");
+          }
         }
         //close when clicked elsewhere
         //window.onclick = function(event) {
