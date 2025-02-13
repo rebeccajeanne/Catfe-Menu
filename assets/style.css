@@ -132,6 +132,14 @@ p {
     display:flex;
 }
 
+.bios-container {
+    visibility: hidden;
+}
+
+.mbios-container {
+    visibility: hidden;
+}
+
 .bio_m {
     height: 80%;
     width:80%;
@@ -209,6 +217,20 @@ p {
     justify-content: center;
     top:-25px;
     text-decoration: underline 2px;
+}
+
+.names:hover {
+    display: flex;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    color:#8B6850;
+    width: 100%;
+    position: inherit;
+    font-size: large;
+    font-weight: bold;
+    justify-content: center;
+    top:-25px;
+    text-decoration: none;
 }
 
 .break {

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Catfe Montclair Current Cats</title>
         <link href="assets/style.css" rel="stylesheet"/>
-        <!-- add js for carousels -->
+        <!-- add bootstrap for carousels -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -14,16 +14,16 @@
 
     <body>
       <!--------------------- main bios(hidden) --------------------->
-      <div class="bios-container" id="main-bio-container" style="visibility:hidden; width:100%;height:100%; display:flex; flex-direction: row; position:absolute; right:0px; bottom:0px;">
+      <div class="bios-container" id="bioA-container" style="width:100%;height:100%; display:flex; flex-direction: row; position:absolute; right:0px; bottom:0px;">
         <div class="popup">
-          <iframe class="bio" id="main-bio"></iframe>
+          <iframe class="bio" id="bioA" src="gallery photos/2bios/Bio_A.html"></iframe>
         </div>
       </div>   
       
       <!------------------mobile bios(hidden)-------------------->
-      <div class="mBios-container" id="mbio-container" style="visibility:hidden; width:100%;height:100%">
+      <div class="mbios-container" id="mbioA-container" style="width:100%;height:100%">
         <div class="popup">
-          <iframe class="bio_m" id="mbio" src="gallery photos/2bios/Bio_mA.html"></iframe>
+          <iframe class="bio_m" id="mbioA" src="gallery photos/2bios/Bio_mA.html"></iframe>
         </div>
       </div>
 
@@ -59,7 +59,7 @@
 
           <div id="carousel-A-container" class="carousel-spacing" >
             <object data="gallery photos/1carousels/Carousel_A.html" class="carousel"></object>
-            <a class="names" id="nameA" href="#" target="_self" onclick="bioFunction; aFunction;">Benny (Bonded->) &male;</a>
+            <div class="names" id="nameA">Benny (Bonded->) &male;</div>
           </div>
 
           <div id="carousel-B-container" class="carousel-spacing">
@@ -162,35 +162,34 @@
       </div>
       <div style="width:100%; height:20px; background-color: blanchedalmond; margin-bottom: 15px; font-size: 0px;"></div>
      
+      <!----------------------javascript------------------------->
       <script>
         var w = window.innerWidth;
-        var bio = document.getElementById("main-bio-container");
-        var mbio = document.getElementById("mbio-container");
+        var bios = document.getElementsByClassName("bios-container");
+        var mbios = document.getElementsByClassName("mbios-container");
+
+        var bioA = document.getElementById("bioA-container");
+        var mbioA = document.getElementById("mbioA-container");
         
-        var nameA = document.getElementById("nameA");
-        
-        function bioFunction() {
-          if (w >= 1200) {
-          bio.style.visibility="visible";
+        document.getElementById("nameA").addEventListener("click", bioFunctionA);
+
+        function bioFunctionA() {
+          if (w >= 1000) {
+          bioA.style.visibility="visible";
           }
           else {
-          mbio.style.visibility="visible";
+          mbioA.style.visibility="visible";
           }
         }
-        //which name is clicked, open corresponding bio
-        function aFunction() {
-          let isVisible = bio.checkVisibility();
-          let isVisibleM = mbio.checkVisibility();
-          if (isVisible == true || isVisibleM == true) {
-	          bio.setAttribute("src", "/gallery photos/2bios/Bio_A.html");
-	          mbio.setAttribute("src", "/gallery photos/2bios/Bio_mA.html");
-          }
-        }
+        
         //close when clicked elsewhere
+        
+
+
         //window.onclick = function(event) {
-        //  if (event.target == mbio || event.target == main-bio) {
-	      //  bio.style.visibility="hidden";
-	      //  mbio.style.visibility="hidden";
+        //  if (event.target != bios || event.target != mbios) {
+	      //  bios.style.visibility="hidden";
+	      //  mbios.style.visibility="hidden";
 	      //  }
         //}
       </script>
