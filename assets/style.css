@@ -6,7 +6,16 @@ body {
     right: 0px;
     left: 0px;
     overflow-x: hidden;
+    transition: filter 0.3s ease;
 }
+
+#bgPage {
+    transition: filter 0.3s ease;
+}
+
+.modal_open {
+    filter: blur(4px); /* Apply blur when the modal is open */
+  }
 
 .header-container {
     position: relative;
@@ -20,7 +29,7 @@ body {
     background-color: blanchedalmond;
 }
 
-#header-container {
+#header_container {
     font-size: 0px;
     position: relative;
     width:100%;
@@ -28,6 +37,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     overflow-x: hidden;
+    transition: filter 0.3s ease;
 }
 
 #arch-container {
@@ -89,7 +99,62 @@ p {
     background: white;
 }
 
-#gallery-container {
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    margin:auto;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.close {
+    color: #8B6850;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+    z-index: 11;
+  }
+  
+  .close:hover, .close:focus {
+    color: #724e2c;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.bio {
+    position:fixed;
+    width:1000px;
+    height:450px;
+    margin:auto;
+    border:5px solid #724e2c;
+    padding:2px;
+    background-color:#8B6850;
+}
+
+.bios_container {
+    display:none;
+}
+
+.mbios_container {
+    display:none;
+}
+
+
+.bio_m {
+    height: 80%;
+    width:80%;
+    border:solid #724e2c;
+    background-color:transparent;
+}
+
+#gallery_container {
     display: inline-flex;
     position: relative;
     width: 100%;
@@ -148,17 +213,6 @@ p {
     background-color: blanchedalmond;
 }
 
-.bio {
-    display:hidden;
-    position: fixed;
-    width:80%;
-    margin: auto;
-}
-
-.bio:target {
-    display:flex;
-}
-
 .names {
     display: flex;
     font-family: Georgia, serif;
@@ -172,8 +226,18 @@ p {
     text-decoration: underline 2px;
 }
 
-.hidden {
-    display: none;
+.names:hover {
+    display: flex;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    color:#8B6850;
+    width: 100%;
+    position: inherit;
+    font-size: large;
+    font-weight: bold;
+    justify-content: center;
+    top:-25px;
+    text-decoration: none;
 }
 
 .break {
@@ -181,28 +245,11 @@ p {
     height: 0;
 }
 
-.bio-carousel {
-    display: inline-flex;
-}
-
-.bio-details {
-    display: hidden;
-    overflow: hidden;
-}
-
 ul {
     font-family: 'Courier New', Courier, monospace;
     list-style-image: none inside url(/assets/pawprint-transparent.png);
     margin-left: auto;
     margin-right: auto;
-}
-
-.bio-info {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left: 20px;
-    width:50px;
-    height:20px;
-    display: inline;
 }
 
 @media screen and (max-width: 1250px) {

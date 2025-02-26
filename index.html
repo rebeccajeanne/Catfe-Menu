@@ -12,8 +12,37 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
     </body>
+      <!-------------main bios (hidden)-------------------->
+      <div class="bios_container" id="bioA_container" style="width:100%;height:100%; flex-direction: row; position:absolute; right:0px; bottom:0px; z-index: auto;">
+        <div class="popup">
+          <iframe class="bio" id="bioA" src="gallery photos/2bios/Bio_A.html"></iframe>
+        </div>
+      </div>
+
+      <div class="bios_container" id="bioB_container" style="width:100%;height:100%; flex-direction: row; position:absolute; right:0px; bottom:0px; z-index: auto;">
+        <div class="popup">
+          <iframe class="bio" id="bioB" src="gallery photos/2bios/Bio_B.html"></iframe>
+        </div>
+      </div>
+
+
+      <!------------mobile bios (hidden)------------------>
+      <div class="mbios_container" id="mbioA_container" style="width:100%;height:100%; z-index: auto;">
+        <div class="popup">
+          <iframe class="bio_m" id="mbioA" src="gallery photos/2bios/mBio_A.html"></iframe>
+        </div>
+      </div>
+
+      <div class="mbios_container" id="mbioB_container" style="width:100%;height:100%; z-index: auto;">
+        <div class="popup">
+          <iframe class="bio_m" id="mbioB" src="gallery photos/2bios/mBio_B.html"></iframe>
+        </div>
+      </div>
+
+
       <!--default to gallery view-->
-      <div id="header-container">
+      <div id="bgPage">
+      <div id="header_container">
         <!--arch and logo-->
 
           <!--left dynamic box-->
@@ -40,7 +69,7 @@
       <h2>Current Purristas</h2>
     
       <!-- photos -->
-       <div id="gallery-container">
+       <div id="gallery_container">
         <!--row 1-->
         <div id="row-1" class="row">
           <!--
@@ -132,6 +161,7 @@
 
         </div>
       </div>
+      </div>
        <!--end of photos-->
 
       <div class="footer" id="containers" style="margin:0; width:100%;">
@@ -146,5 +176,81 @@
       </div>
       <div style="width:100%; height:20px; background-color: blanchedalmond; margin-bottom: 15px; font-size: 0px;"></div>
      
+      <!----------------------javascript------------------------->
+      <script>
+        const getID = document.getElementById.bind(document);
+        const getClass = document.getElementsByClassName(document);
+        var w = $(window).width();
+        let bg = getID("bgPage");
+
+        //bio A open and close
+        document.getElementById("nameA").addEventListener("click", openA);
+        let bioA = getID("bioA_container");
+        let mbioA = getID("mbioA_container");
+
+        function openA() {
+          let w = $(window).width();
+          if (w >= 1000) {
+            bioA.style.display="flex";
+            bioA.style.zindex="10";
+            bg.classList.add("modal_open");
+
+          }
+          else {
+            mbioA.style.display="flex";
+            mbioA.style.zindex="10";
+            bg.classList.add("modal_open");
+          }
+
+          mbioA.onclick = function(e) {
+            if (e.target != mbioA ) {
+              mbioA.style.display="none";
+              mbioA.style.zindex="auto";
+              bg.classList.remove("modal_open");
+            }
+          }
+          bioA.onclick = function(e) {
+            if (e.target != bioA) {
+              bioA.style.display="none";
+              bioA.style.zindex="auto";
+              bg.classList.remove("modal_open");
+            }
+          }
+        }
+
+        //bio B open and close
+        document.getElementById("nameB").addEventListener("click", openB);
+        let bioB = getID("bioB_container");
+        let mbioB = getID("mbioB_container");
+        
+        function openB() {
+          let w = $(window).width();
+          if (w >= 1000) {
+            bioB.style.display="flex";
+            bioB.style.zindex="10";
+            bg.classList.add("modal_open");
+          }
+          else {
+            mbioB.style.display="flex";
+            mbioB.style.zindex="10";
+            bg.classList.add("modal_open");
+          }
+
+          mbioB.onclick = function(e) {
+            if (e.target != mbioB ) {
+              mbioB.style.display="none";
+              mbioB.style.zindex="auto";
+              bg.classList.remove("modal_open");
+            }
+          }
+          bioB.onclick = function(e) {
+            if (e.target != bioB) {
+              bioB.style.display="none";
+              bioB.style.zindex="auto";
+              bg.classList.remove("modal_open");
+            }
+          }
+        }
+      </script>
     </body>
 </html>
