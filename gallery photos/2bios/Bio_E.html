@@ -1,1 +1,237 @@
-Story_E
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Story E Container</title>
+    </head>
+    <style>
+        .bio-container {
+            position:absolute;
+            display: inline-flex;
+            flex-direction: row;
+            overflow: hidden;
+            height:100%;
+            width:100%;
+            background-color: blanchedalmond;
+        }
+
+        body {
+            background-color: #724e2c;
+            display: flex;
+            position: absolute;
+            width:100%;
+            height:100%;
+            margin:auto;
+        }
+        .left-column {
+            font-weight: 600;
+            position:relative;
+            display: inline-flex;
+            justify-content: center;
+            width: 50%;
+            height:auto;
+            /*background-color: #EF818150;*/
+            background-color: blanchedalmond;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-column {
+            position:relative;
+            display: inline-flex;
+            justify-content: flex-start;
+            width:100%;
+            height:auto;
+            /*background-color: #75C2DA80;*/
+            background-color: blanchedalmond;
+            align-items: center;
+            flex-direction: column;
+        }
+        .carousel-container {
+            position: inherit;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            top:20px;
+            left: -24px;
+        }
+
+        .carousel {
+            width:140px; 
+            height:150px;
+            position: relative; 
+            flex-wrap: wrap;
+            padding: 15px;
+            border: 3px solid #724e2c;
+            padding: 1px;
+            background-color: #8B6850;
+            top: 5px;
+            transform: scale(1.15);
+        }
+
+        .about-me {
+            display: inline-flex;
+            position: relative;
+            width:100%;
+            height:100%;
+            font-family: Georgia, serif;
+            left: -16px;
+            top: 16px;
+        }
+
+        .bio-traits {
+            background-color: transparent;
+            display: inline-flex;
+            position: relative;
+            height:100%;
+            width:100%;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items:flex-end;
+            justify-content: center;
+            padding:3px;
+        }
+
+        .answers {
+            background-color: transparent;
+            display: inline-flex;
+            position:relative;
+            width:100%;
+            height:100%;
+            flex-direction: column;
+            padding-left: 15px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            bottom: -3.5px;
+        }
+
+        .story-container {
+            display: inline-flex;
+            position:relative;
+            width:110%;
+            height:100%;
+            flex-direction: column;
+            top:15px;
+            left:-55px;
+        }
+
+        #story-E {
+            border-color: #99826c;
+            position: relative;
+            height: 75%;
+            overflow-y:scroll;
+        }
+
+        .break {
+            width: 100%;
+            height: 0;
+        }
+
+        .arrival-date {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            position:relative;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right:10px;
+            padding-left:5px;
+            align-items: center;
+        }
+
+        .HT {
+            display: inline-flex;
+            width:100%;
+            justify-content:center;
+        }
+
+        .HT-logo {
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+            height: 30%;
+            align-items: center; 
+            position: inherit;
+        }
+
+        .HT-link {
+            display:inline-flex; 
+            position:inherit; 
+            align-items:flex-end; 
+            margin-bottom:15px; 
+            margin-right:30px;
+        }
+
+        .a, a:active, a:visited {
+            color: #2D201B;
+            background-color: transparent;
+            text-decoration: underline 2px;
+        }
+
+        a:hover {
+            color: #724E2C;
+            background-color: transparent;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .adopt {
+            position:relative;
+            left:0.7vw;
+        }
+
+    </style>
+    <body>
+        <div class="bio-container">
+            <div class="left-column">
+                <div class="carousel-container">
+                    <object data="../1carousels/Carousel_E.html" class="carousel"></object>
+                </div>
+                
+                <div class="about-me">
+                    <div class="bio-traits">
+                        <p>Name:</p>
+                        <p>M/F:</p>
+                        <p>Age:</p>
+                        <p>Breed:</p>
+                        <div class="adopt"><p>Adption&nbsp;Status:</p></div>
+                    </div>
+                    <div class="answers">
+                        <p>Cassidy</p>
+                        <p style="z-index: 5;">female</p>
+                        <p style="z-index: 5;">1.5 yrs</p>
+                        <p style="z-index: 5;">domestic longhair</p>
+                        <!--<p style="font-family:'Courier New',Courier,monospace; font-weight:bold; color:#1ea070; z-index: 5;">Adoptable</p>-->
+                        <p style="font-family:'Courier New',Courier,monospace; font-weight:bold; color:#b22850;white-space:nowrap; overflow:visible;">Adoption Pending!</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="right-column">
+                <div class="story-container">
+                    <iframe id="story-E" src="../3stories/Story_E.html"></iframe>
+                    <!--<div>
+                        <h3 style="display: flex; width:auto; justify-content: center;">Bonded&nbsp;with&nbsp;Benny</h3>
+                    </div>-->
+                    <div class="arrival-date">Arrived:&nbsp;<p class="date">October 28, 2024</p></div>
+                </div>
+
+                <div class="HT">
+
+                    <div class="HT-logo">
+                        <img src="../../assets/homelesstails-transparent.png" style="width:200px;height:100px;margin-bottom:10px;" alt="Homeless Tails logo.">
+                    </div>
+                    <div class="HT-link">
+                        <a target="_blank" href="https://www.homelesstails.com">Homeless&nbsp;Tails&nbsp;Cat&nbsp;Rescue</a>
+                    </div>
+
+                </div>
+
+            
+            </div>
+        </div>
+    </body>
+</html>
