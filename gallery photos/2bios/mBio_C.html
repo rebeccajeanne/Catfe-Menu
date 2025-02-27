@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story C (Mobile) Container</title>
+</head>
+<style>
+
+.bio-container_m {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+    background-color: blanchedalmond;
+}
+
+body {
+    background-color: #724e2c;
+    display: block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    margin:auto;
+}
+
+#details-container_m {
+    display: flex;
+    position:relative;
+    flex-direction: row;
+}
+
+.carousel-container_m {
+    margin-top:25px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    height:fit-content;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel_m {
+    width:140px; 
+    height:150px;
+    position: relative; 
+    flex-wrap: nowrap;
+    padding: 15px;
+    border: 3px solid #724e2c;
+    padding: 1px;
+    background-color: #8B6850;
+    top: 5px;
+    transform: scale(1.15);
+}
+
+.break_m {
+    width: 100%;
+    height: 0;
+}
+
+.about-me_m {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    width:100%;
+    font-family: Georgia, serif;
+}
+
+.bio-traits_m {
+    background-color: transparent;
+    display: inline-flex;
+    position: relative;
+    height:300px;
+    width:100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items:flex-end;
+    overflow: hidden;
+    padding-top: 7px;
+    right:5px;
+}
+
+.answers_m {
+    background-color: transparent;
+    display: inline-flex;
+    position:relative;
+    width:100%;
+    height:300px;
+    flex-direction: column;
+    padding-left: 3px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top:8px;
+}
+
+.story-container_m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    width:100%; 
+    top:5px;
+}
+
+#story-C_m {
+    border: solid #724e2c;
+    position: relative;
+    width:85%;
+    height: 500px;
+    overflow-y:scroll;
+}
+
+.arrival-container_m {
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+    align-items: center;
+}
+
+.HT-link_m, .HT-link_m:active, .HT-link_m:visited {
+    text-align: center;
+    color: #2D201B;
+    background-color: transparent;
+    text-decoration: underline 2px;
+}
+
+.HT-link_m:hover {
+    text-align: center;
+    color: #724E2C;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+</style>
+
+
+<body>
+    <div class="bio-container_m">
+        <div>
+            <div class="carousel-container_m">
+                <object data="../1carousels/Carousel_C.html" class="carousel_m"></object>
+            </div>
+
+            <div class="about-me_m">
+                <div class="bio-traits_m">
+                    <p>Name:</p>
+                    <p>M/F:</p>
+                    <p>Age:</p>
+                    <p>Breed:</p>
+                    <p>Pattern:</p>
+                    <div class="adopt_m"><p>Adption&nbsp;Status:</p></div>
+                </div>
+                <div class="answers_m">
+                    <p>Boots</p>
+                    <p style="z-index: 5;">male</p>
+                    <p style="z-index: 5;">2 yrs</p>
+                    <p style="z-index: 5;">domestic&nbsp;shorthair&nbsp;</p>
+                    <p style="z-index: 5;">grey/white</p>
+                    <p style="font-family:'Courier New',Courier,monospace; font-weight:bold; color:#1ea070; z-index: 5;">Adoptable</p>
+                    <!--<p style="font-family:'Courier New',Courier,monospace; font-weight:bold; color: #b22850;white-space:nowrap; overflow:visible;">Adoption Pending!</p>-->
+                </div>
+            </div>
+
+            <div>
+                <h3 style="display: flex; width:auto; justify-content: center;">Bonded&nbsp;with&nbsp;Marco</h3>
+            </div>
+
+            <div class="story-container_m">
+                <iframe id="story-C_m" src="../3stories/Story_C.html"></iframe>
+                <div class="break_m"></div>
+                <div class="arrival-container_m">
+                    <p class="arrival_m">Arrived&nbsp;at&nbsp;Catfe:&nbsp;</p>
+                    <p class="date_m">&nbsp;TBD</p>
+                </div>
+            </div>
+        
+
+            <div class="HT_m">
+                <div class="HT-logo_m" style="display:flex; align-items: center; justify-content: center;">
+                    <img src="../../assets/homelesstails-transparent.png" style="width:200px;height:100px;margin-bottom:10px;" alt="Homeless Tails logo.">
+                </div>
+                <div class="HT-link_m">
+                    <a class="HT-link_m" target="_blank" href="https://www.homelesstails.com">Homeless&nbsp;Tails&nbsp;Cat&nbsp;Rescue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
