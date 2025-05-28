@@ -110,7 +110,7 @@ const getID = document.getElementById.bind(document);
 
         
         //bio D open and close
-        /*document.getElementById("nameD").addEventListener("click", openD);
+        document.getElementById("nameD").addEventListener("click", openD);
         let bioD = getID("bioD_container");
         let mbioD = getID("mbioD_container");
         
@@ -142,11 +142,11 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        */
+        
 
         
         //bio E open and close
-        document.getElementById("nameE").addEventListener("click", openE);
+        /* document.getElementById("nameE").addEventListener("click", openE);
         let bioE = getID("bioE_container");
         let mbioE = getID("mbioE_container");
         
@@ -177,7 +177,7 @@ const getID = document.getElementById.bind(document);
               bg.classList.remove("modal_open");
             }
           }
-        }
+        } */
         
         
         //bio F open and close 
@@ -388,7 +388,7 @@ const getID = document.getElementById.bind(document);
         }
 
         //bio L open and close
-        /* document.getElementById("nameL").addEventListener("click", openL);
+        document.getElementById("nameL").addEventListener("click", openL);
         let bioL = getID("bioL_container");
         let mbioL = getID("mbioL_container");
         
@@ -419,7 +419,7 @@ const getID = document.getElementById.bind(document);
               bg.classList.remove("modal_open");
             }
           }
-        }*/
+        }
 
         //bio M open and close
         document.getElementById("nameM").addEventListener("click", openM);
