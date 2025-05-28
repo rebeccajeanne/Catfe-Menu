@@ -146,7 +146,7 @@ const getID = document.getElementById.bind(document);
 
         
         //bio E open and close
-        /* document.getElementById("nameE").addEventListener("click", openE);
+        document.getElementById("nameE").addEventListener("click", openE);
         let bioE = getID("bioE_container");
         let mbioE = getID("mbioE_container");
         
@@ -177,7 +177,7 @@ const getID = document.getElementById.bind(document);
               bg.classList.remove("modal_open");
             }
           }
-        } */
+        }
         
         
         //bio F open and close 
