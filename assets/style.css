@@ -162,7 +162,7 @@ p {
     background-color: blanchedalmond;
     justify-content: center;
     flex-wrap: wrap;
-    /*padding-top: 25px;*/
+    padding-top: 25px;
 }
 
 .row {
