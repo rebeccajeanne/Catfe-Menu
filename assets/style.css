@@ -183,11 +183,13 @@ p {
 .carousel-spacing {
     position: relative;
     margin: 1.5vw;
+    display:none;
 }
 
 .carousel-spacing:hover {
     transform: scale(1.5);
 }
+
 
 .gal-photo_container{
     position:relative;
@@ -243,6 +245,12 @@ p {
 .break {
     width: 100%;
     height: 0;
+}
+
+.space {
+    width: 100%; 
+    height: 35px;
+    background-color: blanchedalmond;
 }
 
 ul {
@@ -332,4 +340,38 @@ ul {
     .footer {
         font-size: 3vw;
     }
+}
+
+.show {
+    display: block;
+}
+
+.filBtnContainer {
+    overflow: hidden;
+    display: block;
+    align-content: center;
+    width:auto;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 1vw;
+    text-size-adjust: auto;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    float: right;
+    width:auto;
+}
+
+.btn:hover {
+    background-color: #8B6850;
+}
+
+.btn.active {
+    background-color: bisque;
+}
+
+.carContainer {
+    display:none;
 }
