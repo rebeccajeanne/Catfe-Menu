@@ -226,34 +226,46 @@
       <p>——Cat Lounge & Adoption Center——</p>
       <h2>Current Purristas</h2>
       <p>click on names for more info!</p>
-          
+      <div class="space"></div>
+
+      <p style="text-decoration: underline;">Filter by:</p>
+       
+      <div id="filBtnContainer" style="display: flex; justify-content: center; background-color: blanchedalmond;">
+        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="btn" onclick="filterSelection('adoptable')">Adoptable</button>
+        <button class="btn" onclick="filterSelection('adopted')">Adopted!</button>
+        <button class="btn" onclick="filterSelection('under1yr')">Under 1yr</button>
+        <button class="btn" onclick="filterSelection('5andUp')">5 & up</button>
+        <button class="btn" title="in the last 2 weeks" onclick="filterSelection('newb')">New arrivals</button>
+      </div>
+      
       <!-- photos -->
        <div id="gallery_container">
         <!--row 1-->
         <div id="row-1" class="row">
           
-          <div id="carousel-A-container" class="carousel-spacing" >
+          <div id="carousel-A-container" class="carousel-spacing adoptable newb" >
             <object data="gallery photos/1carousels/Carousel_A.html" class="carousel"></object>
             <div class="names" id="nameA">Michi &male;</div>
           </div>
       
-          <div id="carousel-B-container" class="carousel-spacing">
+          <div id="carousel-B-container" class="carousel-spacing under1yr adoptable">
             <object data="gallery photos/1carousels/Carousel_B.html" class="carousel"></object>
             <div class="names" id="nameB">Fizz &male;</div>
           </div>
 
-          <div id="carousel-C-container" class="carousel-spacing">
+          <div id="carousel-C-container" class="carousel-spacing adoptable">
             <object data="gallery photos/1carousels/Carousel_C.html" class="carousel"></object>
             <div class="names" id="nameC">Boots &male;</div>
           </div>
 
-          <div id="carousel-D-container" class="carousel-spacing">
+          <div id="carousel-D-container" class="carousel-spacing under1yr adopted newb">
             <object data="gallery photos/1carousels/Carousel_D.html" class="carousel"></object>
             <div class="names" id="nameD">Charlie &female;</div>
           </div>
           
           
-          <div id="carousel-E-container" class="carousel-spacing">
+          <div id="carousel-E-container" class="carousel-spacing adoptable newb">
             <object data="gallery photos/1carousels/Carousel_E.html" class="carousel"></object>
             <div class="names" id="nameE">Sam &male;</div>
           </div>
@@ -264,27 +276,27 @@
         <!--row 2-->
         <div id="row-2" class="row">
 
-          <div id="carousel-F-container" class="carousel-spacing">
+          <div id="carousel-F-container" class="carousel-spacing 5andUp adopted">
             <object data="gallery photos/1carousels/Carousel_F.html" class="carousel"></object>
             <div class="names" id="nameF">Gracie &female;</div>
           </div>
 
-          <div id="carousel-G-container" class="carousel-spacing">
+          <div id="carousel-G-container" class="carousel-spacing 5andUp adoptable">
             <object data="gallery photos/1carousels/Carousel_G.html" class="carousel"></object>
             <div class="names" id="nameG">Zoe &female;</div>
           </div>
 
-          <div id="carousel-H-container" class="carousel-spacing">
+          <div id="carousel-H-container" class="carousel-spacing adoptable">
             <object data="gallery photos/1carousels/Carousel_H.html" class="carousel"></object>
             <div class="names" id="nameH">Cassie &female;</div>
           </div>
 
-          <div id="carousel-I-container" class="carousel-spacing">
+          <div id="carousel-I-container" class="carousel-spacing adoptable">
             <object data="gallery photos/1carousels/Carousel_I.html" class="carousel"></object>
             <div class="names" id="nameI">Marble &male;</div>
           </div>
 
-          <div id="carousel-J-container" class="carousel-spacing">
+          <div id="carousel-J-container" class="carousel-spacing adoptable">
             <object data="gallery photos/1carousels/Carousel_J.html" class="carousel"></object>
             <div class="names" id="nameJ">London &male;</div>
           </div>
@@ -294,17 +306,17 @@
         <!--row 3-->
         <div id="row-3" class="row">
 
-          <div id="carousel-K-container" class="carousel-spacing">
+          <div id="carousel-K-container" class="carousel-spacing adoptable">
             <object data="gallery photos/1carousels/Carousel_K.html" class="carousel"></object>
             <div class="names" id="nameK">Sheena &female;</div>
           </div>
 
-          <div id="carousel-L-container" class="carousel-spacing">
+          <div id="carousel-L-container" class="carousel-spacing adoptable newb">
             <object data="gallery photos/1carousels/Carousel_L.html" class="carousel"></object>
             <div class="names" id="nameL">Ollie &male;</div>
           </div>
 
-          <div id="carousel-M-container" class="carousel-spacing">
+          <div id="carousel-M-container" class="carousel-spacing under1yr adoptable">
             <object data="gallery photos/1carousels/Carousel_M.html" class="carousel"></object>
             <div class="names" id="nameM">Talullah &female;</div>
           </div>
@@ -339,5 +351,6 @@
      
       <!------------------------javascript-------------------------->
       <script src="js/bios.js"></script>
+      <script src="js/filter.js"></script>
     </body>
 </html>
