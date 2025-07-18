@@ -287,6 +287,7 @@ const getID = document.getElementById.bind(document);
         }
 
         //bio I open and close
+        /*
         document.getElementById("nameI").addEventListener("click", openI);
         let bioI = getID("bioI_container");
         let mbioI = getID("mbioI_container");
@@ -319,6 +320,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
+        */
 
         //bio J open and close
         document.getElementById("nameJ").addEventListener("click", openJ);
