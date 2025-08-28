@@ -147,7 +147,7 @@ const getID = document.getElementById.bind(document);
 
         
         //bio E open and close
-        /*
+        
         document.getElementById("nameE").addEventListener("click", openE);
         let bioE = getID("bioE_container");
         let mbioE = getID("mbioE_container");
@@ -180,7 +180,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        */
+        
         
         //bio F open and close 
         document.getElementById("nameF").addEventListener("click", openF);
