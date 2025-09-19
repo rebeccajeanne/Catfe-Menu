@@ -3,7 +3,7 @@ const getID = document.getElementById.bind(document);
         var w = $(window).width();
         let bg = getID("bgPage");
 
-        
+        /*
         //bio A open and close
         document.getElementById("nameA").addEventListener("click", openA);
         let bioA = getID("bioA_container");
@@ -38,7 +38,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        
+        */
 
         //bio B open and close
         document.getElementById("nameB").addEventListener("click", openB);
@@ -425,6 +425,7 @@ const getID = document.getElementById.bind(document);
           }
         }
 
+/*
         //bio M open and close
         document.getElementById("nameM").addEventListener("click", openM);
         let bioM = getID("bioM_container");
@@ -458,7 +459,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-
+*/
         
         //bio N open and close
         document.getElementById("nameN").addEventListener("click", openN);
