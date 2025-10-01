@@ -3,7 +3,7 @@ const getID = document.getElementById.bind(document);
         var w = $(window).width();
         let bg = getID("bgPage");
 
-        /*
+        
         //bio A open and close
         document.getElementById("nameA").addEventListener("click", openA);
         let bioA = getID("bioA_container");
@@ -38,7 +38,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        */
+        
 
         //bio B open and close
         document.getElementById("nameB").addEventListener("click", openB);
@@ -324,7 +324,6 @@ const getID = document.getElementById.bind(document);
         
 
         //bio J open and close
-        /*
         document.getElementById("nameJ").addEventListener("click", openJ);
         let bioJ = getID("bioJ_container");
         let mbioJ = getID("mbioJ_container");
@@ -356,7 +355,7 @@ const getID = document.getElementById.bind(document);
               bg.classList.remove("modal_open");
             }
           }
-        }*/
+        }
 
         //bio K open and close
         document.getElementById("nameK").addEventListener("click", openK);
