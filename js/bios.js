@@ -39,7 +39,7 @@ const getID = document.getElementById.bind(document);
           }
         }
         
-
+/*
         //bio B open and close
         document.getElementById("nameB").addEventListener("click", openB);
         let bioB = getID("bioB_container");
@@ -73,7 +73,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        
+        */
 
         //bio C open and close 
         document.getElementById("nameC").addEventListener("click", openC);
