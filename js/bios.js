@@ -112,6 +112,8 @@ const getID = document.getElementById.bind(document);
         */
         
         //bio D open and close
+        //foster
+        /*
         document.getElementById("nameD").addEventListener("click", openD);
         let bioD = getID("bioD_container");
         let mbioD = getID("mbioD_container");
@@ -144,7 +146,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        
+        */
 
         
         //bio E open and close
@@ -184,8 +186,8 @@ const getID = document.getElementById.bind(document);
         
         
         //bio F open and close 
-        
-        document.getElementById("nameF").addEventListener("click", openF);
+        //foster
+        /*document.getElementById("nameF").addEventListener("click", openF);
         let bioF = getID("bioF_container");
         let mbioF = getID("mbioF_container");
         
@@ -217,7 +219,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-
+        */
 
         
         //bio G open and close
@@ -325,7 +327,7 @@ const getID = document.getElementById.bind(document);
         
 
         //bio J open and close
-        /*
+        
         document.getElementById("nameJ").addEventListener("click", openJ);
         let bioJ = getID("bioJ_container");
         let mbioJ = getID("mbioJ_container");
@@ -358,7 +360,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-          */
+          
 
         //bio K open and close
         document.getElementById("nameK").addEventListener("click", openK);
@@ -395,6 +397,8 @@ const getID = document.getElementById.bind(document);
         }
 
         //bio L open and close
+        //foster
+        /*
         document.getElementById("nameL").addEventListener("click", openL);
         let bioL = getID("bioL_container");
         let mbioL = getID("mbioL_container");
@@ -427,7 +431,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-
+        */
 
         //bio M open and close
         document.getElementById("nameM").addEventListener("click", openM);
