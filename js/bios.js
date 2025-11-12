@@ -503,7 +503,6 @@ const getID = document.getElementById.bind(document);
         }
         
 
-        /*
         //bio O open and close
         document.getElementById("nameO").addEventListener("click", openO);
         let bioO = getID("bioO_container");
@@ -537,4 +536,3 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        */
