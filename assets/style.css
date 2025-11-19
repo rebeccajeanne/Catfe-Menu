@@ -217,6 +217,7 @@ p {
 
 .names {
     display: flex;
+    flex-wrap: wrap;
     font-family: Georgia, serif;
     color:#2D201B;
     width: 100%;
@@ -230,6 +231,7 @@ p {
 
 .names:hover {
     display: flex;
+    flex-wrap: wrap;
     cursor: pointer;
     font-family: Georgia, serif;
     color:#8B6850;
