@@ -41,7 +41,7 @@ const getID = document.getElementById.bind(document);
         
 
         //bio B open and close
-        /*
+        
         document.getElementById("nameB").addEventListener("click", openB);
         let bioB = getID("bioB_container");
         let mbioB = getID("mbioB_container");
@@ -74,7 +74,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        */
+        
         
 
         //bio C open and close 
@@ -221,7 +221,6 @@ const getID = document.getElementById.bind(document);
           }
         }
         */
-
         
         //bio G open and close
         document.getElementById("nameG").addEventListener("click", openG);
