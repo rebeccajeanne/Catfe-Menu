@@ -5,7 +5,6 @@ const getID = document.getElementById.bind(document);
 
         
         //bio A open and close
-/*
         document.getElementById("nameA").addEventListener("click", openA);
         let bioA = getID("bioA_container");
         let mbioA = getID("mbioA_container");
@@ -39,7 +38,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-      */  
+      
 
         //bio B open and close
         
