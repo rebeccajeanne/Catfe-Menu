@@ -365,6 +365,7 @@ const getID = document.getElementById.bind(document);
         
         
         //bio K open and close
+/*
         document.getElementById("nameK").addEventListener("click", openK);
         let bioK = getID("bioK_container");
         let mbioK = getID("mbioK_container");
@@ -397,6 +398,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
+*/
 
         //bio L open and close
         
