@@ -257,7 +257,7 @@ const getID = document.getElementById.bind(document);
         
 
         //bio H open and close
-        /*
+        
         document.getElementById("nameH").addEventListener("click", openH);
         let bioH = getID("bioH_container");
         let mbioH = getID("mbioH_container");
@@ -290,7 +290,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        */
+        
 
 
         //bio I open and close
