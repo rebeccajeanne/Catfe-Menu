@@ -330,7 +330,7 @@ const getID = document.getElementById.bind(document);
         
 
         //bio J open and close
-        
+        /*
         document.getElementById("nameJ").addEventListener("click", openJ);
         let bioJ = getID("bioJ_container");
         let mbioJ = getID("mbioJ_container");
@@ -363,7 +363,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        
+        */
         
         //bio K open and close
 
@@ -508,7 +508,7 @@ const getID = document.getElementById.bind(document);
         
 
         //bio O open and close
-        
+        /*
         document.getElementById("nameO").addEventListener("click", openO);
         let bioO = getID("bioO_container");
         let mbioO = getID("mbioO_container");
@@ -541,3 +541,4 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
+        */
