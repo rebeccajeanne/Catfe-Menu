@@ -475,6 +475,7 @@ const getID = document.getElementById.bind(document);
         
         
         //bio N open and close
+        /*
         document.getElementById("nameN").addEventListener("click", openN);
         let bioN = getID("bioN_container");
         let mbioN = getID("mbioN_container");
@@ -507,7 +508,7 @@ const getID = document.getElementById.bind(document);
             }
           }
         }
-        
+        */
 
         //bio O open and close
         /*
